@@ -1,0 +1,98 @@
+@font-face {
+    font-family: "Yekan";
+    src: local("Yekan"),
+    url(../font/ttf/Yekan.ttf),
+    url(../font/woff2/Yekan.woff2);
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Yekan";
+}
+body {
+    background-image: url(../images/Wall.jpg);
+}
+main {
+    margin-top: 2vh;
+    margin-right: 35vw ;
+    height: 90vh;
+    border-radius: 7px;
+    background-color: #fff;
+}
+main > div {
+    text-align: center;
+}
+#btn_Sub_form1, #form2 > input, #form2 > button {
+    height: 4vh;
+    background-color: green;
+    outline: none;
+    border: none;
+}
+.div > h2, .div > h4 {
+    padding-right: 15px;
+    text-align: right;
+}
+.div #form2 > input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    outline: 2px solid green;
+}
+#form2 > button#btn-res {
+    border: 2px solid green;
+    background-color: #fff;
+}
+h2, h4 {
+    margin-right: 1.5vw;
+}
+#btn-sub-form1, #btn-sub:hover {
+    background-color: rgba(0, 128, 0, 0.664);
+}
+@media only screen and (max-width: 425px) {
+    main {
+        margin-right: 15vw;
+        width: 70vw;
+    }
+        h1 {
+        font-size: 28px;
+    }
+    #btn_Sub_form1, #form2 > input, #form2 > button {
+        width: 60vw;
+    }
+    #form2 > button#btn-sub {
+        width: 42vw;
+    }
+    #form2 > button#btn-res {
+        width: 18vw;
+    }
+}
+@media only screen and (min-width: 426px) {
+    main {
+        margin-right: 15vw;
+        width: 70vw;
+    }
+    #btn_Sub_form1, #form2 > input, #form2 > button {
+        width: 65vw;
+    }
+    #form2 > button#btn-sub {
+        width: 58vw;
+    }
+    #form2 > button#btn-res {
+        width: 7vw;
+    }
+}
+@media only screen and (min-width: 2560px) {
+    * {
+        font-size: 20px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h4 {
+        font-size: 27px;
+    }
+}
