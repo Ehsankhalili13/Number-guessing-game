@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles/main.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <main>
+        <div class="div">
+            <h1>بازی حدس و گمان</h1>
+            
+            <br>
+            
+            <form action="/create_number" id="form1">
+                <button type="submit" id="btn_Sub_form1">ساخت یک عدد</button>
+            </form>
+            
+            <br>
+            <hr>
+            <h2>حدس عدد</h2>
+            
+            <h4>تعداد حدس باقیمانده: {{chance}}</h4>
+            
+            <form action="/process_equal" id="form2" method="post" onsubmit="">
+                <input type="number" name="number" id="input_number" min="0" max="100">
+                <br>
+                <button type="submit" id="btn-sub">ثبت</button>
+                <button type="reset" id="btn-res">حذف</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
